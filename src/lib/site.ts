@@ -53,6 +53,10 @@ scl.tl.match_loops([adata1, adata2])`,
 				affiliation: "Heemskerk Lab, University of Michigan",
 			},
 			{
+				name: "LiAng Yao",
+				affiliation: "Heemskerk Lab, University of Michigan",
+			},
+			{
 				name: "Idse Heemskerk",
 				affiliation: "Heemskerk Lab, University of Michigan",
 			},
