@@ -26,7 +26,7 @@ scl.tl.match_loops([adata1, adata2])`,
 		license: "https://github.com/stanfish06/scloop/blob/master/LICENSE",
 	},
 	license: "Apache-2.0",
-	copyright: "Zhiyuan (Stan) Yu and Idse Heemskerk",
+	copyright: "Zhiyuan (Stan) Yu, LiAng Yao, and Idse Heemskerk",
 	// About page content
 	about: {
 		steps: [
