@@ -1,7 +1,13 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "scloop-docs",
-  "compatibility_date": "2025-09-02",
+  // Newest date the installed workerd (1.20261019) supports; bump with wrangler upgrades
+  "compatibility_date": "2026-10-19",
   "compatibility_flags": ["nodejs_compat"],
-  "main": "@tanstack/react-start/server-entry"
+  "main": "@tanstack/react-start/server-entry",
+  // Custom domain: Cloudflare creates the DNS record and certificate on deploy.
+  // Requires scloop.dev to be an active zone in the same account and no existing CNAME on docs.scloop.dev.
+  "routes": [{ "pattern": "docs.scloop.dev", "custom_domain": true }],
+  // Request logs in the dashboard (Workers Logs)
+  "observability": { "enabled": true }
 }
